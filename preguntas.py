@@ -17,16 +17,15 @@ def pregunta_01():
     """
 
     # Cargue el dataset digits
-    digits = ____.____()
+    digits = datasets.load_digits()
 
     # Imprima los nombres de la variable target del dataset
-    print(____.____)
+    print(digits.target_names)
 
     # Imprima las dimensinoes de matriz de datos
-    print(____.____.____)
-
+    print(digits.data.shape)
     # Imprima las dimensiones del vector de salida
-    print(____.____.____)
+    print(digits.target.shape)
 
 
 def pregunta_02():
@@ -117,3 +116,5 @@ def pregunta_03():
     )
 
     return df
+
+print(pregunta_01())
